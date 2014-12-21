@@ -33,6 +33,18 @@
     <p>
         The experienced management of BSUM have of more than 20 years of hands-on experience from all the steps from taking academic innovations to established start-up companies and further to technology out-licensing and exit.
     </p>
+    <h1>Latest news:</h1>
+    {% if news_objects %}
+        {% for new in news_objects %}
+            <h2>{{new.headline}}</h2>
+            <p>{{new.content}}</p>
+            <p>Written by {{new.user.username}} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}
+            {% else %}0{{new.updated.minute}}{% endif %}
+            on {{new.updated.day}}.{{new.updated.month}}</p>
+        {% endfor %}
+    {% else %}
+    <h2>No news avaliable</h2>
+    {% endif %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
