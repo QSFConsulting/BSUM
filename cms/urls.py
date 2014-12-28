@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     url(r'^news/', 'cms.views.get_news'),
     url(r'^admin/', include(admin.site.urls)),
+    #url(r'^static/admin/', include(admin.site.urls)),
 )
