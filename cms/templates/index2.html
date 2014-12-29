@@ -62,17 +62,17 @@
       <div class="row">
           <div class="col-sm-4">
             <div class="row">
-              <div class="col-sm-10 col-sm-offset-2 text-center"><h3>Resourcing Your Success</h3><p>There is other content and snippets of details or features that can be placed here..</p><i class="fa fa-cog fa-5x"></i></div>
+              <div class="col-sm-10 col-sm-offset-2 text-center"><h3>Trustworthy</h3><p>We deliver when we promise. We work with the highest degree of confidentiality and security.</p><i class="fa fa-cog fa-5x"></i></div>
             </div>
           </div>
           <div class="col-sm-4 text-center">
             <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 text-center"><h3>Our Clients Are Our Best Advertisement</h3><p>You may also want to create content that compells users to scroll down more..</p><i class="fa fa-user fa-5x"></i></div>
+              <div class="col-sm-10 col-sm-offset-1 text-center"><h3>Experienced</h3><p>Together we've got over 35 years of management and hands-on experience in Biotech business.</p><i class="fa fa-user fa-5x"></i></div>
             </div>
           </div>
           <div class="col-sm-4 text-center">
             <div class="row">
-              <div class="col-sm-10 text-center"><h3>Experienced Management</h3><p>The experienced management of BSUM have of more than 20 years of hands-on experience from all the steps from taking academic innovations to established start-up companies and further to technology out-licensing and exit.</p><i class="fa fa-mobile fa-5x"></i></div>
+              <div class="col-sm-10 text-center"><h3>Customer-oriented</h3><p>Customers' needs are our first priority. We listen to our customers and pay attention to every request.</p><i class="fa fa-mobile fa-5x"></i></div>
             </div>
           </div>
       </div><!--/row-->
@@ -88,9 +88,7 @@
           {% for new in news_objects %}
               <h2>{{new.headline}}</h2>
               <p>{{new.content}}</p>
-              <p>Written by {{new.user.username}} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}
-              {% else %}0{{new.updated.minute}}{% endif %}
-              on {{new.updated.day}}.{{new.updated.month}}</p>
+              <p>Written by {% if user.first_name %}{{new.user.first_name}} {{new.user.last_name}}{% else %} {{user.username}}{% endif %} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}{% else %}0{{new.updated.minute}}{% endif %} on {{new.updated.day}}.{{new.updated.month}}</p>
           {% endfor %}
       {% else %}
       <h2>No news available</h2>
