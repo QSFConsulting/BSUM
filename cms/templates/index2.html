@@ -88,9 +88,7 @@
           {% for new in news_objects %}
               <h2>{{new.headline}}</h2>
               <p>{{new.content}}</p>
-              <p>Written by {{new.user.username}} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}
-              {% else %}0{{new.updated.minute}}{% endif %}
-              on {{new.updated.day}}.{{new.updated.month}}</p>
+              <p>Written by {% if user.first_name %}{{new.user.first_name}} {{new.user.last_name}}{% else %} {{user.username}}{% endif %} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}{% else %}0{{new.updated.minute}}{% endif %} on {{new.updated.day}}.{{new.updated.month}}</p>
           {% endfor %}
       {% else %}
       <h2>No news avaliable</h2>
