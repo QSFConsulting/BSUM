@@ -105,3 +105,31 @@ footer .nav>li>a:hover {
     background-color:transparent;
 	color:#fff;
 }
+
+blockquote {
+  position: relative;
+  border-left: none;
+  padding: 0 0 0 120px;
+  margin: 2em 0 2em 0;
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 130px;
+  position: absolute;
+  left: 40px;
+  top: -55px;
+  font-family: cursive;
+}
+
+blockquote cite {
+  padding-left: 2em;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 0.5em;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
