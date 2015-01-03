@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 
 class News(models.Model):
 
+    override_date = models.DateTimeField(blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(User)
