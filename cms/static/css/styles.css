@@ -24,6 +24,10 @@ h1 {
 	background-color:#fff;
 }
 
+.navbar-form {
+  display: none;
+}
+
 .navbar-trans {
 	background-color:rgb(35,80,33);
     color:#fff;
