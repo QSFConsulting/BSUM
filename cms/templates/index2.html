@@ -74,15 +74,17 @@
             </div>
           </div>
       </div><!--/row-->
-    <div class="row">
+    <div class="row newsbox">
     <div class="col-sm-8 col-sm-offset-2 text-center">
-      <h1>Latest news:</h1>
       {% if news_objects %}
           {% for new in news_objects %}
-              <h2>{{new.headline}}</h2>
-              <p>{{new.content}}</p>
-              <p>Written by {% if user.first_name %}{{new.user.first_name}} {{new.user.last_name}}{% else %} {{user.username}}{% endif %} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}{% else %}0{{new.updated.minute}}{% endif %} on {{new.updated.day}}.{{new.updated.month}}</p>
+            <div class="newsitem">
+              <h2>{{new.headline}}<br>
+                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small></h2>
+              <p class="newstext">{{new.content}}</p>
+            </div>
           {% endfor %}
+        <h2>...</h2>
       {% else %}
       <h2>No news available</h2>
       {% endif %}

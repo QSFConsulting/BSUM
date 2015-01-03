@@ -15,6 +15,11 @@ html,body {
     background-size: cover;
 }
 
+h1 {
+  font-size: 60px;
+  padding-bottom: 0.5em;
+}
+
 .icon-bar {
 	background-color:#fff;
 }
@@ -46,7 +51,7 @@ section {
 }
 
 .v-center {
-    padding-top:10%;
+    padding-top:1em;
     font-size:70px;
 }
 
@@ -68,6 +73,23 @@ a.list-group-item.active:hover  {
 #section1 {
 	background-color: rgb(56,122,54);
   color:#ffffff;
+}
+
+.newsbox {
+  padding-top: 5em;
+}
+
+.newsitem {
+  padding-bottom: 2em;
+}
+
+.newstext {
+  word-wrap: break-word;
+  white-space: pre;
+}
+
+#section1 h2 > small {
+  color: #ffffff;
 }
 
 #section2 {
