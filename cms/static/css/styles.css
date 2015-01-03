@@ -88,6 +88,10 @@ a.list-group-item.active:hover  {
   white-space: pre;
 }
 
+.newstext a {
+  color: #86c552;
+}
+
 #section1 h2 > small {
   color: #ffffff;
 }

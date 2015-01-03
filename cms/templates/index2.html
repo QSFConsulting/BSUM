@@ -80,7 +80,12 @@
           {% for new in news_objects %}
             <div class="newsitem">
               <h2>{{new.headline}}<br>
-                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small></h2>
+                {% if new.override_date %}
+                <small>{{new.override_date.day}}.{{new.override_date.month}}.{{new.override_date.year}}</small>
+                {% else %}
+                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
+                {% endif %}
+                </h2>
               <p class="newstext">{{new.content}}</p>
             </div>
           {% endfor %}
@@ -319,6 +324,13 @@
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.linkify.min.js"></script>
 		<script src="/static/js/scripts.js"></script>
+
+    <script>
+      $(window).on('load', function () {
+        $('.newstext').linkify();
+      });
+      </script>
 	</body>
 </html>
