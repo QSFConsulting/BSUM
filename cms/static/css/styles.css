@@ -120,12 +120,17 @@ a.list-group-item.active:hover  {
   color:#ddd;
 }
 
+.copyright {
+  text-align: right;
+  padding-right: 2em;
+}
+
 footer {
 	background-color:#494949;
-    color:#ddd;
-    min-height:100px;
-    padding-top:20px;
-    padding-bottom:40px;
+  color:#ddd;
+  min-height:100px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 footer .nav>li>a {
