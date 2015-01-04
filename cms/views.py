@@ -4,7 +4,6 @@ from models import News
 
 def get_index(request):
     news_objects = News.objects.all().order_by("-updated")[:2]
-
     for new in news_objects:
         new.cut = False
         if len(new.content):
@@ -23,7 +22,6 @@ def get_index(request):
 
 def get_news(request):
     news_objects = News.objects.all().order_by("-updated")
-    print news_objects
     for new in news_objects:
         if new.override_date:
             new.updated = new.override_date
@@ -31,5 +29,4 @@ def get_news(request):
         list(news_objects),
         key=lambda x: x.updated,
         reverse=True)
-    print news_objects
     return render(request, 'news.html', {'news_objects': news_objects})
