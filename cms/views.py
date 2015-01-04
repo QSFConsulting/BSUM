@@ -6,7 +6,7 @@ def get_index(request):
     news_objects = News.objects.all().order_by("-updated")
     for new in news_objects:
         new.cut = False
-        if len(new.content):
+        if len(new.content) > 360:
             tmp_content = new.content[:360]
             tmp_content = " ".join(tmp_content.split(" ")[:-1]) + "..."
             new.content = tmp_content
