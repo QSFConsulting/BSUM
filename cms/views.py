@@ -3,7 +3,7 @@ from models import News
 
 
 def get_index(request):
-    news_objects = News.objects.all().order_by("-updated")[:2]
+    news_objects = News.objects.all().order_by("-updated")
     for new in news_objects:
         new.cut = False
         if len(new.content):
@@ -16,7 +16,7 @@ def get_index(request):
     news_objects = sorted(
         list(news_objects),
         key=lambda x: x.updated,
-        reverse=True)
+        reverse=True)[:2]
     return render(request, 'index.html', {'news_objects': news_objects})
 
 
