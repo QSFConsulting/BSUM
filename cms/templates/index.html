@@ -34,6 +34,9 @@
                 {% endif %}
                 </h2>
               <p class="newstext">{{new.content}}</p>
+              {% if new.cut %}
+              <p class="newstext cut"><a href="/news/">Read more</a></p>
+              {% endif %}
             </div>
           {% endfor %}
         <h2>...</h2>
