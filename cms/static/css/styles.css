@@ -87,9 +87,14 @@ a.list-group-item.active:hover  {
   padding-bottom: 2em;
 }
 
+.newsitem h2{
+  text-align: left;
+}
+
 .newstext {
   word-wrap: break-word;
   white-space: pre;
+  text-align: left;
 }
 
 .newstext a {

@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+<section class="container-fluid" id="section1">
+  	<h1 class="text-center">News</h1>
+
+  	<div class="container">
+    <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      {% if news_objects %}
+          {% for new in news_objects %}
+            <div class="newsitem">
+              <h2>{{new.headline}}<br>
+                {% if new.override_date %}
+                <small>{{new.override_date.day}}.{{new.override_date.month}}.{{new.override_date.year}}</small>
+                {% else %}
+                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
+                {% endif %}
+                </h2>
+              <p class="newstext">{{new.content}}</p>
+            </div>
+          {% endfor %}
+      {% else %}
+      <h2>No news available</h2>
+      {% endif %}
+    </div>
+  </div>
+  </div><!--/container-->
+</section>
+
+    {% include "footer.html" %}
+    {% include "scripts.html" %}
+
+
+	</body>
+</html>
