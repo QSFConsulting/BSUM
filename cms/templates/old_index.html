@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Resourcing Your Success</h1>
+    <p>
+        Biotech Start-Up Management (BSUM) is a one-stop service provider for life science ventures. BSUM expert services help you with all the steps from innovation management to goal oriented international business development. BSUM expert management, network of trusted partners and pool of life science professionals guarantee the high quality of our services fitting best to your current needs.
+    </p>
+    <p>Our customers are mainly pharmaceutical and biotech companies, research institutes and business acceleration units.</p>
+
+    <h1>Our Clients Are Our Best Advertisement</h1>
+    <blockquote>
+        BSUM has given us indispensable help and advice with commercialization of our product. They have provided insight for finding the target groups for applications and routes for networking with the right people for development of the product.
+    </blockquote>
+    <cite>Anna-Maria Pirttilä, Ph.D., Docent, University of Oulu</cite>
+
+    <h1>Experienced Management</h1>
+    <p>
+        The experienced management of BSUM have of more than 20 years of hands-on experience from all the steps from taking academic innovations to established start-up companies and further to technology out-licensing and exit.
+    </p>
+
+    <article id="people">
+        <h2>Juhani Lahdenperä</h2>
+
+        <h4>Founder, M.Sc.</h4>
+
+        <p>Juhani has over 15 years experience in biotechnology business. He has served in management positions over last 10 years out of which 7 years as a CEO. Further information on his background can be found from his <a href="http://fi.linkedin.com/pub/juhani-lahdenperä/5/82/89a/"> LinkedIn-profile.</a></p>
+
+        <h2>Jari Rautio</h2>
+
+        <h4>Partner, D.Sc</h4>
+
+        <p>Jari has over 15 years of experience on biotechnology related R&D and business development. He has served last seven years in management positions in industry both as head of R&D and as a CEO. Further information on his background can be found from his <a href="http://www.linkedin.com/profile/view?id=2580039&amp;locale=en_US&amp;trk=tyah&amp;trkInfo=tas%3Ajari%20rautio%2Cidx%3A1-1-1">LinkedIn-profile.</a></p>
+    </article>
+
+    <article id="testimonials">
+    <h1>Testimonials</h1>
+
+    <blockquote>"The training session was very informative with concrete examples and real life experiences. Students had to think on their feet with a couple of case studies. Overall the students really enjoyed the session and we would definitely invite Juhani to come back to speak the next time."</blockquote>
+
+    <b>Claire Hyder</b>, Ph.D., Technology Transfer Project Manager, Åbo Akademi
+
+     
+
+    <blockquote>"Biotech Start-up Management has helped us with of one of our Life Sciences portfolio companies. Service included efficient operational management and restructuring to successfully engage key stakeholders e.g. in connection to capital raising efforts and partner negotiations. Duties were carried out with high motivation and commitment in challenging startup environment leaving a good impression of the professional skills and entrepreneurial attitude."</blockquote>
+
+    <b>Kalle Åström</b>, Venture Capital, Finnvera plc
+
+     
+
+    <blockquote>“BSUM has provided us invaluable help and support during the foundation process of our recently established company. They have afforded guidance from the practical aspects of erecting a startup to business planning and networking with the investors and clients. Their skillful and professional services with an approachable and friendly attitude are highly appreciated and warmly recommended by us.”</blockquote>
+
+    <b>Juha Pulkkinen</b>, Ph.D., Docent, Co-founder of FLX Discoveries Ltd.
+
+     
+
+    <blockquote>"Jari and Juhani were the trainers in our “Feasibility Study for Roal Oy” course, where doctoral students in life sciences worked on an assignment commissioned by Roal Oy. The expertise and professionalism of the trainers were crucial for the success of the course and much appreciated by the students. Jari and Juhani were also commented on their commitment to the project, readiness to help and friendly attitude, making them easy to approach by the students. I am thus happy to recommend BSUM and look forward to working with them in future."</blockquote>
+
+    <b>Ulla Tuomainen</b>, Ph.D., Project Manager at PhDs to Business Life, University of Helsinki
+    </article>
+
+    <article>
+    List of Our Customer References
+ 
+    <h3>Universities</h3>
+    <ul>
+        <li>University of Turku </li>
+        <li>University of Oulu </li>
+        <li>University of Helsinki </li>
+        <li>Åbo Akademi</li>
+    </ul>
+    
+    <h3>Consulting companies</h3>
+    <ul> 
+        <li>Medaffcon</li>
+    </ul>
+    <h3>Financers</h3>
+    <ul>
+        <li>Veraventure </li>
+        <li>VTT Ventures </li>
+    </ul>
+    <h3>Biotech companies</h3>
+    <ul>
+        <li>FLX Discoveries</li>
+    </ul>
+    <h3>Financial services</h3>
+    <ul>
+        <li>Jamerco</li>
+    </ul>
+    </article>
+
+    <h1>Latest news:</h1>
+    {% if news_objects %}
+        {% for new in news_objects %}
+            <h2>{{new.headline}}</h2>
+            <p>{{new.content}}</p>
+            <p>Written by {{new.user.username}} at {{new.updated.hour}}:{% if new.updated.minute > 9 %}{{new.updated.minute}}
+            {% else %}0{{new.updated.minute}}{% endif %}
+            on {{new.updated.day}}.{{new.updated.month}}</p>
+        {% endfor %}
+    {% else %}
+    <h2>No news available</h2>
+    {% endif %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
