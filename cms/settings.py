@@ -4,7 +4,7 @@ from base import *
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['104.236.117.61', '.bsum.fi']
+ALLOWED_HOSTS = ['188.166.37.173', '.bsum.fi']
 
 DEBUG = False
 
