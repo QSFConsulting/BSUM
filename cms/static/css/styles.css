@@ -20,6 +20,18 @@ h1 {
   padding-bottom: 0.5em;
 }
 
+
+.with-tagline {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.tagline {
+  margin-top: 0;
+  padding-top: 0.2em;
+  margin-bottom: 1.5em;
+}
+
 .icon-bar {
 	background-color:#fff;
 }
