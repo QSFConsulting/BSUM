@@ -23,6 +23,10 @@ def get_index(request):
     return render(request, 'index.html', {'news_objects': news_objects})
 
 
+def get_references(request):
+    return render(request, 'references.html')
+
+
 def get_news(request):
     news_objects = News.objects.all().order_by("-updated")
     print news_objects
