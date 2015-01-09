@@ -113,6 +113,10 @@ a.list-group-item.active:hover  {
   color: #86c552;
 }
 
+h3 a , h3 a:hover {
+  color: #86c552;
+}
+
 #section1 h2 > small {
   color: #ffffff;
 }
