@@ -1,81 +1,28 @@
 {% include "header.html" %}
 
 <section class="container-fluid" id="section1">
-  	<h1 class="text-center v-center">Biotech Start-Up Management</h1>
-
+  <img src="/static/img/bsum_logo_notext.png" class="center-block v-center" id="startlogo">
+  	<h1 class="text-center with-tagline">Biotech Start-Up Management</h1>
+    <h2 class="text-center tagline"><i>Resourcing Your Success</i></h2>
   	<div class="container">
       <div class="row">
           <div class="col-sm-4">
             <div class="row">
-              <div class="col-sm-10 col-sm-offset-2 text-center"><h3>Reliable</h3><p>We deliver when we promise. We work with the highest degree of confidentiality and security.</p><i class="fa fa-briefcase fa-5x"></i></div>
+              <div class="col-sm-10 col-sm-offset-2 text-center"><h3>Devoted</h3><p>We are dedicated to deliver when we promise with the highest quality and reliability.</p><i class="fa fa-briefcase fa-5x"></i></div>
             </div>
           </div>
           <div class="col-sm-4 text-center">
             <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 text-center"><h3>Experienced</h3><p>Together we've got over 35 years of management and hands-on experience in Biotech business.</p><i class="fa fa-wrench fa-5x"></i></div>
+              <div class="col-sm-10 col-sm-offset-1 text-center"><h3>Experienced</h3><p>Together we've got over 35 years of management and hands-on experience in Biotech business from start-up to exit.</p><i class="fa fa-wrench fa-5x"></i></div>
             </div>
           </div>
           <div class="col-sm-4 text-center">
             <div class="row">
-              <div class="col-sm-10 text-center"><h3>Customer-oriented</h3><p>Customers' needs are our first priority. We listen to our customers and pay attention to every request.</p><i class="fa fa-user fa-5x"></i></div>
+              <div class="col-sm-10 text-center"><h3>Customer oriented</h3><p>Our primary aim is to help you succeed. We listen to your needs and find the best way to meet your expectation.</p><i class="fa fa-user fa-5x"></i></div>
             </div>
           </div>
       </div><!--/row-->
-    <div class="row newsbox">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-      {% if news_objects %}
-          {% for new in news_objects %}
-            <div class="newsitem">
-              <h2>{{new.headline}}<br>
-                {% if new.override_date %}
-                <small>{{new.override_date.day}}.{{new.override_date.month}}.{{new.override_date.year}}</small>
-                {% else %}
-                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
-                {% endif %}
-                </h2>
-              <p class="newstext">{{new.content}}</p>
-              {% if new.cut %}
-              <p class="newstext cut"><a href="/news/">Read more</a></p>
-              {% endif %}
-            </div>
-          {% endfor %}
-        <h2>...</h2>
-      {% else %}
-      <h2>No news available</h2>
-      {% endif %}
-    </div>
-  </div>
   </div><!--/container-->
-</section>
-
-<section class="container-fluid" id="section4">
-	<h2 class="text-center">Meet the experts</h2>
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-2">
-
-            <img class="img-responsive" src="/static/img/juhani.jpg">
-
-            <h2>Juhani Lahdenperä</h2>
-
-            <h4>Founder, M.Sc.</h4>
-
-            <p>Juhani has over 15 years experience in biotechnology business. He has served in management positions over the last 10 years including 7 years as a CEO. Further information on his background can be found from his <a href="http://fi.linkedin.com/pub/juhani-lahdenperä/5/82/89a/"> LinkedIn-profile.</a></p>
-          </div>
-          <div class="col-sm-4">
-
-            <img class="img-responsive" src="/static/img/jari.jpg">
-
-            <h2>Jari Rautio</h2>
-
-            <h4>Partner, D.Sc</h4>
-
-            <p>Jari has over 15 years of experience on biotechnology related R&D and business development. He has served last seven years in management positions in industry both as head of R&D and as a CEO. Further information on his background can be found from his <a href="http://www.linkedin.com/profile/view?id=2580039&amp;locale=en_US&amp;trk=tyah&amp;trkInfo=tas%3Ajari%20rautio%2Cidx%3A1-1-1">LinkedIn-profile.</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
 </section>
 
 <section class="container-fluid" id="section5">
@@ -179,7 +126,7 @@
 
       <div class="col-sm-6 col-xs-12 col-sm-offset-3">
             <div class="list-group text-center">
-              <a href="#" class="list-group-item active">
+              <a href="#footer" class="list-group-item active">
                 <h2 class="list-group-item-heading">Contact us</h2>
                 <h6>Contact us and request a meeting to discuss the details</h6>
               </a>
@@ -191,6 +138,77 @@
 </section>
 
 
+<section class="container-fluid" id="section1b">
+  <h2 class="text-center">Latest news</h2>
+    <div class="container">
+    <div class="row newsbox">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      {% if news_objects %}
+          {% for new in news_objects %}
+            <div class="newsitem">
+              <h2>{{new.headline}}<br>
+                {% if new.override_date %}
+                <small>{{new.override_date.day}}.{{new.override_date.month}}.{{new.override_date.year}}</small>
+                {% else %}
+                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
+                {% endif %}
+                </h2>
+              <p class="newstext">{{new.content}}</p>
+              {% if new.cut %}
+              <p class="newstext cut"><a href="/news/">Read more</a></p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        <h2>...</h2>
+      {% else %}
+      <h2>No news available</h2>
+      {% endif %}
+    </div>
+  </div>
+  </div><!--/container-->
+</section>
+
+<section class="container-fluid" id="section4">
+	<h2 class="text-center">Meet the experts</h2>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-2">
+
+            <img class="img-responsive" src="/static/img/juhani.jpg">
+
+            <h2>Juhani Lahdenperä</h2>
+
+            <h4>Founder, M.Sc.</h4>
+
+            <p>
+              Juhani has over 15 years experience in biotechnology business. He has served in management positions over the last 10 years including 7 years as a CEO. Further information on his background can be found from his <a href="http://fi.linkedin.com/pub/juhani-lahdenperä/5/82/89a/"> LinkedIn-profile.</a></p>
+            <p>
+              Phone: +358 50 3669 502<br/>
+              Email: firstname.surname@bsum.fi<br/>
+            </p>
+          </div>
+          <div class="col-sm-4">
+
+            <img class="img-responsive" src="/static/img/jari.jpg">
+
+            <h2>Jari Rautio</h2>
+
+            <h4>Partner, D.Sc</h4>
+
+            <p>
+              Jari has over 15 years of experience on biotechnology related R&D and business development. He has served last seven years in management positions in industry both as head of R&D and as a CEO. Further information on his background can be found from his <a href="http://www.linkedin.com/profile/view?id=2580039&amp;locale=en_US&amp;trk=tyah&amp;trkInfo=tas%3Ajari%20rautio%2Cidx%3A1-1-1">LinkedIn-profile.</a>
+            </p>
+
+            <p>
+              Phone: +358 50 3139 427<br/>
+              Email: firstname.surname@bsum.fi<br/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
 <section class="container-fluid" id="section3">
   <h1 class="text-center">Testimonials</h1>
@@ -230,6 +248,7 @@
             </cite>
             </blockquote>
         </p>
+        <h3 class="text-center"><a href="/references/#section4">More references</a></h3>
       </div>
    </div>
 </section>

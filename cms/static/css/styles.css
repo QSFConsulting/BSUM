@@ -20,6 +20,23 @@ h1 {
   padding-bottom: 0.5em;
 }
 
+#headerlogo {
+  max-width: 200px;
+  padding-top: 0;
+  margin-top: -5px;
+}
+
+.with-tagline {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.tagline {
+  margin-top: 0;
+  padding-top: 0.2em;
+  margin-bottom: 1.5em;
+}
+
 .icon-bar {
 	background-color:#fff;
 }
@@ -74,7 +91,7 @@ a.list-group-item.active:hover  {
   border-color: #86c552;
 }
 
-#section1 {
+#section1, #section1b {
 	background-color: rgb(56,122,54);
   color:#ffffff;
 }
@@ -101,7 +118,11 @@ a.list-group-item.active:hover  {
   color: #86c552;
 }
 
-#section1 h2 > small {
+h3 a , h3 a:hover {
+  color: #86c552;
+}
+
+#section1b h2 > small {
   color: #ffffff;
 }
 

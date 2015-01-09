@@ -1,0 +1,631 @@
+[
+{
+    "pk": 1, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "logentry", 
+        "name": "log entry", 
+        "app_label": "admin"
+    }
+},
+{
+    "pk": 2, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "permission", 
+        "name": "permission", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 3, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "group", 
+        "name": "group", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 4, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "user", 
+        "name": "user", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 5, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "contenttype", 
+        "name": "content type", 
+        "app_label": "contenttypes"
+    }
+},
+{
+    "pk": 6, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "session", 
+        "name": "session", 
+        "app_label": "sessions"
+    }
+},
+{
+    "pk": 7, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "news", 
+        "name": "Piece of news", 
+        "app_label": "cms"
+    }
+},
+{
+    "pk": "15to33h9fznnp4sxc7zmmrvg09nlb28l", 
+    "model": "sessions.session", 
+    "fields": {
+        "expire_date": "2015-01-23T11:06:17.573Z", 
+        "session_data": "NzRiYzk4OGM2YTYyOGVhM2U5ZjBjOWRmMTg3YWJkNmM2OTY0MmM1NTp7fQ=="
+    }
+},
+{
+    "pk": "3xus97zqygrt6l7twbmkf37isd6hluty", 
+    "model": "sessions.session", 
+    "fields": {
+        "expire_date": "2015-01-18T10:22:41.251Z", 
+        "session_data": "NGY5ZDdiOGIxZWI2YmIyYTEzMDIyMDdmN2RjMzQyYTNhMWMxMjE5Njp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+    }
+},
+{
+    "pk": "ikb4rnph6kasuy24ozpo95vusziolbvk", 
+    "model": "sessions.session", 
+    "fields": {
+        "expire_date": "2015-01-18T09:47:16.297Z", 
+        "session_data": "NGY5ZDdiOGIxZWI2YmIyYTEzMDIyMDdmN2RjMzQyYTNhMWMxMjE5Njp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+    }
+},
+{
+    "pk": "v1q0728x9zc0be7bo2oafva152puklqb", 
+    "model": "sessions.session", 
+    "fields": {
+        "expire_date": "2015-01-18T08:31:40.371Z", 
+        "session_data": "NGY5ZDdiOGIxZWI2YmIyYTEzMDIyMDdmN2RjMzQyYTNhMWMxMjE5Njp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_logentry", 
+        "name": "Can add log entry", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_logentry", 
+        "name": "Can change log entry", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_logentry", 
+        "name": "Can delete log entry", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_permission", 
+        "name": "Can add permission", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_permission", 
+        "name": "Can change permission", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_permission", 
+        "name": "Can delete permission", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_group", 
+        "name": "Can add group", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_group", 
+        "name": "Can change group", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_group", 
+        "name": "Can delete group", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_user", 
+        "name": "Can add user", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_user", 
+        "name": "Can change user", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_user", 
+        "name": "Can delete user", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_contenttype", 
+        "name": "Can add content type", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_contenttype", 
+        "name": "Can change content type", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_contenttype", 
+        "name": "Can delete content type", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_session", 
+        "name": "Can add session", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_session", 
+        "name": "Can change session", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_session", 
+        "name": "Can delete session", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_news", 
+        "name": "Can add Piece of news", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_news", 
+        "name": "Can change Piece of news", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_news", 
+        "name": "Can delete Piece of news", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "admin", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2015-01-09T11:06:04.169Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$ytfORxPqvAge$NijCbeUfwbxIr3EbrnU4yGmHlcN3G/6caBZeVpWHTlg=", 
+        "email": "", 
+        "date_joined": "2015-01-04T08:31:32.387Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T10:00:50.698Z", 
+        "override_date": "2014-12-05T11:00:00Z", 
+        "created": "2015-01-04T09:55:26.749Z", 
+        "headline": "BSUM helped Univ. of Oulu to Secure Tekes TUTL Funding", 
+        "content": "BSUM helped Univ. of Oulu to secure Tekes TUTL-funding to develop new business from plant-derived antibiotics. Our service essentially included all the stages of the funding application, such as technology application selection, description of its business potential as well as collecting industrial feedback for reducing business risks related to the project. This funding was the first approved life science TUTL funding for Univ. of Oulu and the first Tekes funding for Department of Biology. We would like to congratulate and thank the research team as well as University of Oulu Innovations Services for the success in this process and we are looking forward to our collaboration in the future.\r\n\r\nLink to original news at Univ. Of Oulu webpages: http://www.oulu.fi/english/news/2014/12/new-business-plant-derived-antibiotics", 
+        "user": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T09:56:39.924Z", 
+        "override_date": "2014-06-06T20:00:00Z", 
+        "created": "2015-01-04T09:56:39.924Z", 
+        "headline": "Herantis Pharma IPO was successful", 
+        "content": "We congratulate Herantis Pharma on their recent IPO and wish all the best for the future. Juhani served in Hermo Pharma as a CEO until the end of 2013 just before the Laurantis M&A was executed followed by successful IPO.", 
+        "user": 1
+    }
+},
+{
+    "pk": 4, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T09:57:28.346Z", 
+        "override_date": "2014-06-10T09:00:00Z", 
+        "created": "2015-01-04T09:57:28.346Z", 
+        "headline": "BSUM will organize business training for the University of Helsinki", 
+        "content": "BSUM will organize for University of Helsinki an advanced business training course. We are looking forward to provide practical business education to the biotech students during fall 2014 with ROAL.\r\n", 
+        "user": 1
+    }
+},
+{
+    "pk": 5, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T09:58:02.618Z", 
+        "override_date": "2014-07-01T16:00:00Z", 
+        "created": "2015-01-04T09:58:02.618Z", 
+        "headline": "BSUM helped customer enter M&A negotiations", 
+        "content": "Screening of potential exit and business partners for customers is one of the key services BSUM provides. These can typically be long lasting processes requiring building of trust between partners that have matching business goals and complementary offering for customers. BSUM has recently helped one customer to receive an M&A offer as a result of this effort. ", 
+        "user": 1
+    }
+},
+{
+    "pk": 6, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T09:58:47.315Z", 
+        "override_date": "2014-08-25T11:00:00Z", 
+        "created": "2015-01-04T09:58:47.315Z", 
+        "headline": "Meet us at HealhBio annual seminar", 
+        "content": "Meet BSUM team at HealthBio-annual seminar. Seminar will be held at Turku, Kokouskeskus Mauno, BioCity, Tykist\u00f6katu 6 on 27.8.2014. More information about the event: www.healthbio.fi.", 
+        "user": 1
+    }
+},
+{
+    "pk": 7, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T09:59:31.201Z", 
+        "override_date": "2014-08-26T12:00:00Z", 
+        "created": "2015-01-04T09:59:31.201Z", 
+        "headline": "BSUM and University of Oulu Innovation Services have signed a business development agreement", 
+        "content": "BSUM will review the market potential, help with technology transfer and fund raising for a set of cutting edge technologies that have come out of the university\u00b4s innovation pipeline. The technologies range from antibiotic peptides to instrument calibration devices. All cases have a solid scientific background, practical applications and a large market potential creating interesting opportunities for further fundraising, development, establishing startups and licensing. Selected technologies will be presented in the upcoming BioEurope event in Frankfurt in November 2014 by BSUM. \r\n\r\nFurther information about BioEurope event: http://www.ebdgroup.com/bioeurope/index.php\r\n\r\nFurther information about Innovation Services: http://www.oulu.fi/yliopisto/tutkimus/tuki/keksinn%C3%B6t-ja-liikeideat\r\n\r\nFurther information about TUTL-funding: http://www.tekes.fi/en/whats-going-on/application-schedules/new-knowledge-and-business-from-research-ideas-application-for-research-funding-22014/", 
+        "user": 1
+    }
+},
+{
+    "pk": 8, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T10:00:17.037Z", 
+        "override_date": "2014-10-23T14:00:00Z", 
+        "created": "2015-01-04T10:00:17.037Z", 
+        "headline": "BSUM is helping Aalto-Helsinki Bioworks team on its way to iGEM competition", 
+        "content": "BSUM wishes the best luck for the Aalto-Helsinki Bioworks team to the upcoming iGEM competition in Boston. iGEMis a worldwide synthetic biology competition for students and entrepreneurs and Bioworks is the first team from Finland participating in the event. As part of the iGEM, teams all over the world develop biological devices using the open gene archive provided by the BioBricks Foundation. Research groups are encouraged to develop and document their own gene parts to be added to the archive and to be used by other teams.\r\n\r\nBioworks consists of nine students from Aalto University and University of Helsinki. The team is building a remote controller for bacteria by using synthetic biology. The controller has the potential to boost the development and production in pharmaceutical and biofuel industry and industrial biotechnology. BSUM has been helping the team with business plan and model development and to get contacted with industrial partners.  \r\n\r\nMore information:\r\n\r\nAalto-Helsinki Bioworks - www.aaltohelsinki.com\r\n\r\niGEM competition - www.igem.org\r\n\r\nBioBricks foundations - www.biobricks.org", 
+        "user": 1
+    }
+},
+{
+    "pk": 9, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T10:24:48.696Z", 
+        "override_date": "2014-05-12T12:24:39Z", 
+        "created": "2015-01-04T10:24:48.695Z", 
+        "headline": "Pre-seed funding round obtained by our customer", 
+        "content": "We are proud to announce that our customer obtained pre-seed funding. BSUM helped them to structure the deal and related documentations.", 
+        "user": 1
+    }
+},
+{
+    "pk": 10, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-09T11:06:12.961Z", 
+        "override_date": "2014-04-02T12:25:15Z", 
+        "created": "2015-01-04T10:25:22.532Z", 
+        "headline": "FLX Discoveries established", 
+        "content": "FLX Discoveries, a biotechnology company based in Kuopio, was founded and registered today with our help. FLX Discoveries focuses on developing a novel treatment for Bening Prostatic Hyperplasia (BPH).", 
+        "user": 1
+    }
+},
+{
+    "pk": 11, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T10:25:55.237Z", 
+        "override_date": "2014-01-06T12:25:48Z", 
+        "created": "2015-01-04T10:25:55.237Z", 
+        "headline": "Medaffcon and BSUM to agreement leased Juhani Lahdenper\u00e4 as their on Business Development Consultant", 
+        "content": "BSUM will offer Business Development Consultation to Medaffcon offering expert services pharmaceutical, biotechnology and healthcare sectors. Juhani Lahdenper\u00e4 will join Medaffcon team. \r\n\r\nwww.medaffcon.fi", 
+        "user": 1
+    }
+},
+{
+    "pk": 12, 
+    "model": "cms.news", 
+    "fields": {
+        "updated": "2015-01-04T10:26:23.811Z", 
+        "override_date": "2014-01-02T12:26:05Z", 
+        "created": "2015-01-04T10:26:23.811Z", 
+        "headline": "Jari Rautio joined BSUM", 
+        "content": "Jari Rautio, an experienced biotech business professional, joined BSUM. Jari Rautio has earlier been head of R&D at Plexpress as well as the CEO of the company. Jari Rautio provides for customers of Biotech Start-Up Management broad business and R&D experience and networks.", 
+        "user": 1
+    }
+},
+{
+    "pk": 1, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T08:34:46.304Z", 
+        "object_repr": "asd", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 2, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 3, 
+        "action_time": "2015-01-04T09:47:36.724Z", 
+        "object_repr": "asd", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 3, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T09:55:26.757Z", 
+        "object_repr": "BSUM helped Univ....", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 4, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T09:56:39.927Z", 
+        "object_repr": "Herantis Pharma I...", 
+        "object_id": "3", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 5, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T09:57:28.349Z", 
+        "object_repr": "BSUM will organiz...", 
+        "object_id": "4", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 6, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T09:58:02.620Z", 
+        "object_repr": "BSUM helped custo...", 
+        "object_id": "5", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 7, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T09:58:47.317Z", 
+        "object_repr": "Meet us at HealhB...", 
+        "object_id": "6", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 8, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T09:59:31.204Z", 
+        "object_repr": "BSUM and Universi...", 
+        "object_id": "7", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 9, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T10:00:17.040Z", 
+        "object_repr": "BSUM is helping A...", 
+        "object_id": "8", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 10, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2015-01-04T10:00:50.702Z", 
+        "object_repr": "BSUM helped Univ....", 
+        "object_id": "2", 
+        "change_message": "Changed content.", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 11, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T10:24:48.702Z", 
+        "object_repr": "Pre-seed funding ...", 
+        "object_id": "9", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 12, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T10:25:22.534Z", 
+        "object_repr": "FLX Discoveries e...", 
+        "object_id": "10", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 13, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T10:25:55.239Z", 
+        "object_repr": "Medaffcon and BSU...", 
+        "object_id": "11", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 14, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2015-01-04T10:26:23.814Z", 
+        "object_repr": "Jari Rautio joine...", 
+        "object_id": "12", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 7
+    }
+},
+{
+    "pk": 15, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2015-01-09T11:06:12.969Z", 
+        "object_repr": "FLX Discoveries e...", 
+        "object_id": "10", 
+        "change_message": "Changed override_date.", 
+        "user": 1, 
+        "content_type": 7
+    }
+}
+]
