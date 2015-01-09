@@ -22,30 +22,6 @@
             </div>
           </div>
       </div><!--/row-->
-    <div class="row newsbox">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-      {% if news_objects %}
-          {% for new in news_objects %}
-            <div class="newsitem">
-              <h2>{{new.headline}}<br>
-                {% if new.override_date %}
-                <small>{{new.override_date.day}}.{{new.override_date.month}}.{{new.override_date.year}}</small>
-                {% else %}
-                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
-                {% endif %}
-                </h2>
-              <p class="newstext">{{new.content}}</p>
-              {% if new.cut %}
-              <p class="newstext cut"><a href="/news/">Read more</a></p>
-              {% endif %}
-            </div>
-          {% endfor %}
-        <h2>...</h2>
-      {% else %}
-      <h2>No news available</h2>
-      {% endif %}
-    </div>
-  </div>
   </div><!--/container-->
 </section>
 
@@ -150,7 +126,7 @@
 
       <div class="col-sm-6 col-xs-12 col-sm-offset-3">
             <div class="list-group text-center">
-              <a href="#" class="list-group-item active">
+              <a href="#footer" class="list-group-item active">
                 <h2 class="list-group-item-heading">Contact us</h2>
                 <h6>Contact us and request a meeting to discuss the details</h6>
               </a>
@@ -159,6 +135,37 @@
     </div>
     </div><!--/container-->
   </div>
+</section>
+
+
+<section class="container-fluid" id="section1b">
+  <h2 class="text-center">Latest news</h2>
+    <div class="container">
+    <div class="row newsbox">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      {% if news_objects %}
+          {% for new in news_objects %}
+            <div class="newsitem">
+              <h2>{{new.headline}}<br>
+                {% if new.override_date %}
+                <small>{{new.override_date.day}}.{{new.override_date.month}}.{{new.override_date.year}}</small>
+                {% else %}
+                <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
+                {% endif %}
+                </h2>
+              <p class="newstext">{{new.content}}</p>
+              {% if new.cut %}
+              <p class="newstext cut"><a href="/news/">Read more</a></p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        <h2>...</h2>
+      {% else %}
+      <h2>No news available</h2>
+      {% endif %}
+    </div>
+  </div>
+  </div><!--/container-->
 </section>
 
 <section class="container-fluid" id="section4">
@@ -232,7 +239,16 @@
              &nbsp;&nbsp; &nbsp; Co-founder of FLX Discoveries Ltd.
             </cite>
             </blockquote>
+
+            <blockquote>Jari and Juhani were the trainers in our “Feasibility Study for Roal Oy” course, where doctoral students in life sciences worked on an assignment commissioned by Roal Oy. The expertise and professionalism of the trainers were crucial for the success of the course and much appreciated by the students. Jari and Juhani were also commented on their commitment to the project, readiness to help and friendly attitude, making them easy to approach by the students. I am thus happy to recommend BSUM and look forward to working with them in future.
+            <cite>
+             <big>Ulla Tuomainen</big><br>
+             &nbsp;&nbsp; &nbsp; PPh.D., Project Manager at PhDs to Business Life<br>
+             &nbsp;&nbsp; &nbsp; University of Helsinki
+            </cite>
+            </blockquote>
         </p>
+        <h3 class="text-center"><a href="/references/#section4">More references</a></h3>
       </div>
    </div>
 </section>
