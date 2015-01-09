@@ -86,7 +86,7 @@ a.list-group-item.active:hover  {
   border-color: #86c552;
 }
 
-#section1 {
+#section1, #section1b {
 	background-color: rgb(56,122,54);
   color:#ffffff;
 }
@@ -117,7 +117,7 @@ h3 a , h3 a:hover {
   color: #86c552;
 }
 
-#section1 h2 > small {
+#section1b h2 > small {
   color: #ffffff;
 }
 
