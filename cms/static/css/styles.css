@@ -108,9 +108,7 @@ a.list-group-item.active:hover  {
   text-align: left;
 }
 
-.newstext {
-  word-wrap: break-word;
-  white-space: pre;
+.newstext p {
   text-align: left;
 }
 

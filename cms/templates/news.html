@@ -16,7 +16,7 @@
                 <small>{{new.updated.day}}.{{new.updated.month}}.{{new.updated.year}}</small>
                 {% endif %}
                 </h2>
-              <p class="newstext">{{new.content}}</p>
+              <div class="newstext">{{new.content|linebreaks}}</div>
             </div>
           {% endfor %}
       {% else %}
