@@ -124,6 +124,10 @@ h3 a , h3 a:hover {
   color: #ffffff;
 }
 
+.newsitem h2 > small {
+  color: #ffffff;
+}
+
 #section2 {
 	background-color: #e5e5ef;
   color:#686868;
