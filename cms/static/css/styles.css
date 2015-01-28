@@ -11,7 +11,7 @@ author: bootply.com
 
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('http://cdni.wired.co.uk/1240x826/a_c/A_startup.jpg');
+    background:center no-repeat fixed url('/static/img/Plant.jpg');
     background-size: cover;
 }
 
