@@ -11,7 +11,7 @@ author: bootply.com
 
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('http://cdni.wired.co.uk/1240x826/a_c/A_startup.jpg');
+    background:center no-repeat fixed url('/static/img/Plant.jpg');
     background-size: cover;
 }
 
@@ -108,9 +108,7 @@ a.list-group-item.active:hover  {
   text-align: left;
 }
 
-.newstext {
-  word-wrap: break-word;
-  white-space: pre;
+.newstext p {
   text-align: left;
 }
 
@@ -123,6 +121,10 @@ h3 a , h3 a:hover {
 }
 
 #section1b h2 > small {
+  color: #ffffff;
+}
+
+.newsitem h2 > small {
   color: #ffffff;
 }
 
@@ -203,4 +205,26 @@ blockquote cite {
 
 blockquote cite:before {
   content: "\2014 \2009";
+}
+
+.twitter-container {
+  margin-top:50px;
+}
+
+.reference-logo-container {
+  text-align: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reference-logo {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.footerimg {
+  max-height: 100px;
+  max-width: 250px !important;
 }
