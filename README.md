@@ -7,7 +7,7 @@ Biotech Start-Up Management
 ## Unix
 ### Moving files to the server
 
-1. Merge current changes into release barnch and switch to it
+1. Merge current changes into "Release" branch and switch to it (you will always have 2 branches)
 2. Ensure that you've got the production settings on
 3. run `deploy.bash`
 4. Insert username `root` and password
