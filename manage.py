@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+
+# to run the server:
+# python manage.py runserver
+
 import os
 import sys
 
