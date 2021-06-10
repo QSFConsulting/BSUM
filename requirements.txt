@@ -1,4 +1,4 @@
-Django==1.6.1
+Django==2.2.24
 PyYAML==3.10
 South==0.7.5
 argparse==1.2.1
